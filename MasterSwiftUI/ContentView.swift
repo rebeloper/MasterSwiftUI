@@ -5,26 +5,24 @@
 //  Created by Alex Nagy on 06.02.2024.
 //
 
+// ZStack, Creating ViewModifiers, Spacer, ControlGroup, ViewThatFits, ContentUnavailableView
+// GeometryReader (GeometryStack), ScrollViewReader
+// Grid, LazyVGrid, LazyHGrid, Table
+
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            ScrollView(.horizontal) {
-                LazyHStack(content: {
-                    ForEach(1...10, id: \.self) { count in
-                        /*@START_MENU_TOKEN@*/Text("Placeholder \(count)")/*@END_MENU_TOKEN@*/
-                    }
-                })
-                .border(.red, width: 1)
-            }
+        TabView {
+            ContentUnavailableView("Page one", systemImage: "square.and.arrow.down", description: Text("Lorem ipsum"))
             
-            HStack(content: {
-                ForEach(1...2, id: \.self) { count in
-                    /*@START_MENU_TOKEN@*/Text("Placeholder \(count)")/*@END_MENU_TOKEN@*/
-                }
-            })
-            .border(.red, width: 1)
+            ContentUnavailableView("Page two", systemImage: "square.and.arrow.down", description: Text("Lorem ipsum"))
+            
+            ContentUnavailableView("Page three", systemImage: "square.and.arrow.down", description: Text("Lorem ipsum"))
+        }
+        .tabViewStyle(.page(indexDisplayMode: .always))
+        .backgroundIgnoringSafeArea {
+            Color.teal
         }
     }
 }
@@ -33,3 +31,4 @@ struct ContentView: View {
     ContentView()
 //        .preferredColorScheme(.dark)
 }
+
