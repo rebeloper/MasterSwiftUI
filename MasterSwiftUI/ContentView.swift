@@ -13,16 +13,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
-            ContentUnavailableView("Page one", systemImage: "square.and.arrow.down", description: Text("Lorem ipsum"))
-            
-            ContentUnavailableView("Page two", systemImage: "square.and.arrow.down", description: Text("Lorem ipsum"))
-            
-            ContentUnavailableView("Page three", systemImage: "square.and.arrow.down", description: Text("Lorem ipsum"))
-        }
-        .tabViewStyle(.page(indexDisplayMode: .always))
-        .backgroundIgnoringSafeArea {
-            Color.teal
+        ScrollViewReader { proxy in
+            Button("Go to bottom") {
+                withAnimation {
+                    proxy.scrollTo(24)
+                }
+            }
+            ScrollView {
+                ForEach(0..<30, id: \.self) { index in
+                    Image(systemName: "\(index).circle")
+                        .font(.largeTitle)
+                        .id(index)
+                }
+            }
+            Button("Go to top") {
+                withAnimation {
+                    proxy.scrollTo(3)
+                }
+            }
         }
     }
 }

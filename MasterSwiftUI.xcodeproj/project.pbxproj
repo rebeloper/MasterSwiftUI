@@ -13,6 +13,7 @@
 		C91F90612B72670800CE0BA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91F90602B72670800CE0BA6 /* ContentView.swift */; };
 		C91F90632B72670900CE0BA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91F90622B72670900CE0BA6 /* Assets.xcassets */; };
 		C91F90662B72670900CE0BA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91F90652B72670900CE0BA6 /* Preview Assets.xcassets */; };
+		C94E89102B8E18430013B31B /* GeometryStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E890F2B8E18430013B31B /* GeometryStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C91F90602B72670800CE0BA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C91F90622B72670900CE0BA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C91F90652B72670900CE0BA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C94E890F2B8E18430013B31B /* GeometryStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				C91F90602B72670800CE0BA6 /* ContentView.swift */,
 				C90B80E82B84DD32006BFBA7 /* BackgroundIgnoringSafeArea.swift */,
 				C90B80EA2B84E01E006BFBA7 /* Pusher.swift */,
+				C94E890F2B8E18430013B31B /* GeometryStack.swift */,
 				C91F90622B72670900CE0BA6 /* Assets.xcassets */,
 				C91F90642B72670900CE0BA6 /* Preview Content */,
 			);
@@ -146,6 +149,7 @@
 				C90B80E92B84DD32006BFBA7 /* BackgroundIgnoringSafeArea.swift in Sources */,
 				C91F90612B72670800CE0BA6 /* ContentView.swift in Sources */,
 				C90B80EB2B84E01E006BFBA7 /* Pusher.swift in Sources */,
+				C94E89102B8E18430013B31B /* GeometryStack.swift in Sources */,
 				C91F905F2B72670800CE0BA6 /* MasterSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
