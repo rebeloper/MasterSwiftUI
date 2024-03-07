@@ -12,27 +12,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var colors = [
+        ColorInfo(name: "Red", description: .red),
+        ColorInfo(name: "Blue", description: .blue),
+        ColorInfo(name: "Orange", description: .orange)
+    ]
+    
     var body: some View {
-        ScrollViewReader { proxy in
-            Button("Go to bottom") {
-                withAnimation {
-                    proxy.scrollTo(24)
-                }
+        Table(colors) {
+            TableColumn("Names") { color in
+                Text(color.name)
             }
-            ScrollView {
-                ForEach(0..<30, id: \.self) { index in
-                    Image(systemName: "\(index).circle")
-                        .font(.largeTitle)
-                        .id(index)
-                }
-            }
-            Button("Go to top") {
-                withAnimation {
-                    proxy.scrollTo(3)
-                }
+            
+            TableColumn("Colors") { color in
+                color.description
             }
         }
     }
+}
+
+struct ColorInfo: Identifiable {
+    let id = UUID()
+    var name = ""
+    var description = Color.clear
 }
 
 #Preview {
