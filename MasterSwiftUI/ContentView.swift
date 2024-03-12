@@ -9,37 +9,32 @@
 // GeometryReader (GeometryStack), ScrollViewReader
 // Grid, LazyVGrid, LazyHGrid, Table
 
+// Button, Label, Link, ShareLink, SignInWithAppleButton, Toggle
+
 import SwiftUI
+import AuthenticationServices
 
 struct ContentView: View {
     
-    @State private var colors = [
-        ColorInfo(name: "Red", description: .red),
-        ColorInfo(name: "Blue", description: .blue),
-        ColorInfo(name: "Orange", description: .orange)
-    ]
+    @State private var isOn = false
     
     var body: some View {
-        Table(colors) {
-            TableColumn("Names") { color in
-                Text(color.name)
-            }
-            
-            TableColumn("Colors") { color in
-                color.description
-            }
+        VStack {
+            Toggle(isOn: $isOn, label: {
+                Image(systemName: "\(isOn ? "heart.fill" : "heart")")
+            })
+            .labelsHidden()
+            .padding()
+//            .background(.orange)
+            .clipShape(RoundedRectangle(cornerRadius: 25.0))
+            .toggleStyle(.button)
+            .tint(.red)
         }
+        .padding()
     }
-}
-
-struct ColorInfo: Identifiable {
-    let id = UUID()
-    var name = ""
-    var description = Color.clear
 }
 
 #Preview {
     ContentView()
-//        .preferredColorScheme(.dark)
 }
 
