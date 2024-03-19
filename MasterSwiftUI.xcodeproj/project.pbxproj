@@ -14,6 +14,7 @@
 		C91F90632B72670900CE0BA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91F90622B72670900CE0BA6 /* Assets.xcassets */; };
 		C91F90662B72670900CE0BA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91F90652B72670900CE0BA6 /* Preview Assets.xcassets */; };
 		C94E89102B8E18430013B31B /* GeometryStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E890F2B8E18430013B31B /* GeometryStack.swift */; };
+		C96C77402BA9CB17006098EA /* Vollda-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C96C773F2BA9CB17006098EA /* Vollda-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		C91F90622B72670900CE0BA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C91F90652B72670900CE0BA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C94E890F2B8E18430013B31B /* GeometryStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryStack.swift; sourceTree = "<group>"; };
+		C96C773F2BA9CB17006098EA /* Vollda-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vollda-Bold.otf"; sourceTree = "<group>"; };
+		C96C77412BA9CB26006098EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,8 @@
 		C91F905D2B72670800CE0BA6 /* MasterSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				C96C77412BA9CB26006098EA /* Info.plist */,
+				C96C773F2BA9CB17006098EA /* Vollda-Bold.otf */,
 				C91F905E2B72670800CE0BA6 /* MasterSwiftUIApp.swift */,
 				C91F90602B72670800CE0BA6 /* ContentView.swift */,
 				C90B80E82B84DD32006BFBA7 /* BackgroundIgnoringSafeArea.swift */,
@@ -134,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96C77402BA9CB17006098EA /* Vollda-Bold.otf in Resources */,
 				C91F90662B72670900CE0BA6 /* Preview Assets.xcassets in Resources */,
 				C91F90632B72670900CE0BA6 /* Assets.xcassets in Resources */,
 			);
@@ -287,6 +293,7 @@
 				DEVELOPMENT_TEAM = R252PR8AVU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MasterSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -316,6 +323,7 @@
 				DEVELOPMENT_TEAM = R252PR8AVU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MasterSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
