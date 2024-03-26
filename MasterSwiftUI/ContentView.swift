@@ -11,50 +11,159 @@
 
 // Button, Label, Link, ShareLink, SignInWithAppleButton, Toggle
 // Text
+// List
 
 import SwiftUI
 
 struct ContentView: View {
     
-    @ScaledMetric private var fontSize: CGFloat = 30
-    
-    @State private var text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    
-//    @State private var text = "Lorem ipsum dolor sit amet, consectetur laborum"
-    @State private var isBold = false
-    
-    @State private var marathon = Measurement(value: 45.8, unit: UnitLength.miles)
-    
-    
-    @State private var names = [
-        PersonNameComponents(givenName: "Alex", familyName: "Nagy"),
-        PersonNameComponents(givenName: "Alex", familyName: "Nagy"),
-        PersonNameComponents(givenName: "Alex", familyName: "Nagy"),
+    @State private var persons = [
+        Person(name: "Ada"),
+        Person(name: "Bob"),
+        Person(name: "Claire")
     ]
     
-    @State private var name = "Ada Lovelace"
-    
-    var attributedString: AttributedString {
-        var attributedName = AttributedString(name)
+    struct Person: Identifiable, Hashable {
+        var id = UUID().uuidString
         
-        let ada = attributedName.range(of: "Ada")!
-        let lovelace = attributedName.range(of: "Lovelace")!
-        
-        attributedName[ada].foregroundColor = .red
-        attributedName[lovelace].foregroundColor = .green
-        
-        return attributedName
+        var name: String
     }
     
+    @State private var selection: [Person] = []
+    
     var body: some View {
-        VStack {
-            Text(attributedString)
+        ScrollableView($persons, selection: $selection) { $person in
+            bindableCell($person)
+//            cell(person)
+                .onDelete(title: "Trash") {
+                    persons.remove(person)
+                }
+                .swipeActions(edge: .leading, allowsFullSwipe: true) {
+                    Button(action: {
+                        print("Swiped: \(person.name)")
+                    }, label: {
+                        Text("Button")
+                    })
+                }
         }
-        .padding()
+        .background(.teal)
+        .refreshable {
+            persons.append(Person(name: "Deane"))
+        }
+        .toolbar {
+            ToolbarItem {
+                EditButton()
+            }
+        }
+        .safeAreaInset(edge: .bottom) {
+            HStack {
+                ForEach(selection) { person in
+                    Text(person.name)
+                }
+            }
+        }
+    }
+    
+    func bindableCell(_ person: Binding<Person>) -> some View {
+        HStack {
+            TextField("Name", text: person.name)
+                .textFieldStyle(.roundedBorder)
+                .frame(width: 200)
+            Text(person.wrappedValue.name)
+        }
+        .padding(.horizontal)
+    }
+    
+    func cell(_ person: Person) -> some View {
+        Text(person.name)
+            .padding(.horizontal)
+    }
+    
+}
+
+struct ScrollableView<Data, Cell>: View where Data: RandomAccessCollection & MutableCollection, Data.Element: Identifiable & Hashable, Cell: View {
+    
+    @Binding private var data: Data
+    @ViewBuilder private var cell: (Binding<Data.Element>) -> Cell
+    @Binding private var selection: [Data.Element]
+    
+    init(_ data: Binding<Data>, selection: Binding<[Data.Element]>? = nil, cell: @escaping (Binding<Data.Element>) -> Cell) {
+        self._data = data
+        self.cell = cell
+        self.usesSelection = selection != nil
+        self._selection = selection ?? .constant([])
+    }
+    
+    @State private var usesSelection = false
+    @State private var selectionIDs = Set<Data.Element.ID>()
+    
+    var body: some View {
+        Group {
+            if usesSelection {
+                List($data, selection: $selectionIDs) { $person in
+                    cell($person)
+                        .listRowBackground(Color.clear)
+                        .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
+                        .listRowSeparator(.hidden)
+                }
+            } else {
+                List {
+                    ForEach($data) { $person in
+                        cell($person)
+                    }
+                    .onMove(perform: { indices, newOffset in
+                        data.move(fromOffsets: indices, toOffset: newOffset)
+                    })
+                    .listRowBackground(Color.clear)
+                    .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
+                    .listRowSeparator(.hidden)
+                }
+            }
+        }
+        .listStyle(.plain)
+        .onChange(of: selectionIDs) { oldValue, newValue in
+            selection.removeAll()
+            newValue.forEach { id in
+                data.forEach { element in
+                    if element.id == id {
+                        selection.append(element)
+                    }
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    ContentView()
+    NavigationStack {
+        ContentView()
+    }
 }
 
+extension View {
+    func onDelete(title: String? = nil, _ action: @escaping () -> Void) -> some View {
+        self.swipeActions(edge: .trailing, allowsFullSwipe: true) {
+            Button(role: .destructive) {
+                withAnimation {
+                    action()
+                }
+            } label: {
+                if let title {
+                    Text(title)
+                } else {
+                    Image(systemName: "trash")
+                }
+            }
+
+        }
+    }
+}
+
+extension Array where Element: Equatable {
+    mutating func remove(_ element: Element) {
+        guard let index = self.firstIndex(of: element) else { return }
+        _ = withAnimation {
+            self.remove(at: index)
+        }
+    }
+}
