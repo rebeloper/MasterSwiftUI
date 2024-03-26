@@ -106,6 +106,16 @@ struct ScrollableView<Data, Cell>: View where Data: RandomAccessCollection & Mut
                         .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
                         .listRowSeparator(.hidden)
                 }
+                .onChange(of: selectionIDs) { oldValue, newValue in
+                    selection.removeAll()
+                    newValue.forEach { id in
+                        data.forEach { element in
+                            if element.id == id {
+                                selection.append(element)
+                            }
+                        }
+                    }
+                }
             } else {
                 List {
                     ForEach($data) { $person in
@@ -121,16 +131,6 @@ struct ScrollableView<Data, Cell>: View where Data: RandomAccessCollection & Mut
             }
         }
         .listStyle(.plain)
-        .onChange(of: selectionIDs) { oldValue, newValue in
-            selection.removeAll()
-            newValue.forEach { id in
-                data.forEach { element in
-                    if element.id == id {
-                        selection.append(element)
-                    }
-                }
-            }
-        }
     }
 }
 
