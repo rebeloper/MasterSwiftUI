@@ -32,7 +32,7 @@ struct ContentView: View {
     @State private var selection: [Person] = []
     
     var body: some View {
-        ScrollableView($persons, selection: $selection) { $person in
+        Roll($persons, selection: $selection) { $person in
             bindableCell($person)
 //            cell(person)
                 .onDelete(title: "Trash") {
@@ -81,7 +81,7 @@ struct ContentView: View {
     
 }
 
-struct ScrollableView<Data, Cell>: View where Data: RandomAccessCollection & MutableCollection, Data.Element: Identifiable & Hashable, Cell: View {
+struct Roll<Data, Cell>: View where Data: RandomAccessCollection & MutableCollection, Data.Element: Identifiable & Hashable, Cell: View {
     
     @Binding private var data: Data
     @ViewBuilder private var cell: (Binding<Data.Element>) -> Cell
