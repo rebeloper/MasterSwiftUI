@@ -51,3 +51,42 @@ struct ContentView: View {
         ContentView()
     }
 }
+
+
+struct ViewThatFits_WithScrollView: View {
+    var repeatedDataView: some View {
+        VStack {
+            ForEach(0..<15) { index in
+                Image (systemName: "\(index) circle")
+                    .padding()
+            }
+        }
+    }
+    
+    var body: some View {
+//        ViewThatFits {
+//            repeatedDataView
+//            
+//            ScrollView {
+//                repeatedDataView
+//            }
+//        }
+//        .font(.largeTitle)
+        
+        repeatedDataView
+            .font(.largeTitle)
+            .scrollableIfNeeded()
+    }
+}
+
+extension View {
+    func scrollableIfNeeded() -> some View {
+        ViewThatFits {
+            self
+            
+            ScrollView {
+                self
+            }
+        }
+    }
+}
