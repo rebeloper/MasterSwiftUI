@@ -14,34 +14,51 @@
 // List
 // ScrollView, Menu, PhotosPicker, ProgressView, RenameButton
 // Color Picker, Date Picker, Disclosure Group, Form
+// Navigation Basics
 
 import SwiftUI
 
 struct ContentView: View {
     
-    @State private var expanded = false
+    @State private var isDestinationViewSheetPresented = false
+    @State private var isDestinationViewFullScreenCoverPresented = false
+    @State private var isDestinationViewLinkPresented = false
     
     var body: some View {
-        Form {
-            DisclosureGroup("Disclosure") {
-                Text("hey")
-            }
-            Text("Hello")
-                .listRowBackground(Color.red)
-                .listRowInsets(.init(top: 30, leading: 30, bottom: 30, trailing: 30))
-            Color.orange
+        List {
             
-            Section {
-                Text("Sections")
-                Button("Button") {
-                    
-                }
-                Toggle("Toggle", isOn: .constant(true))
-            } header: {
-                Text("Header")
+            Button("DestinationView Sheet") {
+                isDestinationViewSheetPresented.toggle()
             }
-            .headerProminence(.increased)
+            
+            Button("DestinationView Full Screen Cover") {
+                isDestinationViewSheetPresented.toggle()
+            }
+            
+            Button("DestinationView Link") {
+                isDestinationViewLinkPresented.toggle()
+            }
+            
         }
+        .sheet(isPresented: $isDestinationViewSheetPresented, onDismiss: {
+            print("on dismissed")
+        }, content: {
+            DestinationView()
+        })
+        .fullScreenCover(isPresented: $isDestinationViewFullScreenCoverPresented, onDismiss: {
+            print("on dismissed")
+        }, content: {
+            DestinationView()
+        })
+//        .navigationDestination(isPresented: $isDestinationViewLinkPresented) {
+//            DestinationView()
+//        }
+        .link(isPresented: $isDestinationViewLinkPresented) {
+            print("on dismissed")
+        } destination: {
+            DestinationView()
+        }
+
     }
 
 }
@@ -52,41 +69,3 @@ struct ContentView: View {
     }
 }
 
-
-struct ViewThatFits_WithScrollView: View {
-    var repeatedDataView: some View {
-        VStack {
-            ForEach(0..<15) { index in
-                Image (systemName: "\(index) circle")
-                    .padding()
-            }
-        }
-    }
-    
-    var body: some View {
-//        ViewThatFits {
-//            repeatedDataView
-//            
-//            ScrollView {
-//                repeatedDataView
-//            }
-//        }
-//        .font(.largeTitle)
-        
-        repeatedDataView
-            .font(.largeTitle)
-            .scrollableIfNeeded()
-    }
-}
-
-extension View {
-    func scrollableIfNeeded() -> some View {
-        ViewThatFits {
-            self
-            
-            ScrollView {
-                self
-            }
-        }
-    }
-}
