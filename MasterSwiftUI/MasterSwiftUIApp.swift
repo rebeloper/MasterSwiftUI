@@ -9,11 +9,16 @@ import SwiftUI
 
 @main
 struct MasterSwiftUIApp: App {
+    
+    @StateObject private var tabsController = TabsController()
+    
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                ContentView()
-            }
+//            NavigationStack {
+//                ContentView()
+//            }
+            TabsView()
+                .environmentObject(tabsController)
         }
     }
 }

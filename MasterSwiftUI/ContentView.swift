@@ -15,6 +15,8 @@
 // ScrollView, Menu, PhotosPicker, ProgressView, RenameButton
 // Color Picker, Date Picker, Disclosure Group, Form
 // Navigation Basics
+// Charts
+// TabView
 
 import SwiftUI
 

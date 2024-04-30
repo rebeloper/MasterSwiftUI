@@ -14,6 +14,14 @@
 		C91F90632B72670900CE0BA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91F90622B72670900CE0BA6 /* Assets.xcassets */; };
 		C91F90662B72670900CE0BA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91F90652B72670900CE0BA6 /* Preview Assets.xcassets */; };
 		C94E89102B8E18430013B31B /* GeometryStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E890F2B8E18430013B31B /* GeometryStack.swift */; };
+		C95061B62BE115DA00CA52EA /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95061B52BE115DA00CA52EA /* TabsView.swift */; };
+		C95061B82BE1164100CA52EA /* Tab1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95061B72BE1164100CA52EA /* Tab1View.swift */; };
+		C95061BA2BE1164E00CA52EA /* Tab2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95061B92BE1164E00CA52EA /* Tab2View.swift */; };
+		C95061BC2BE1166000CA52EA /* Tab3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95061BB2BE1166000CA52EA /* Tab3View.swift */; };
+		C95061BE2BE1167000CA52EA /* Tab4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95061BD2BE1167000CA52EA /* Tab4View.swift */; };
+		C95061C02BE1167B00CA52EA /* Tab5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95061BF2BE1167B00CA52EA /* Tab5View.swift */; };
+		C95061C22BE1168F00CA52EA /* Tab6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95061C12BE1168F00CA52EA /* Tab6View.swift */; };
+		C95061C42BE119E600CA52EA /* TabsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95061C32BE119E600CA52EA /* TabsController.swift */; };
 		C96C77402BA9CB17006098EA /* Vollda-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C96C773F2BA9CB17006098EA /* Vollda-Bold.otf */; };
 		C9708B6C2BD7BF2100FA752E /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9708B6B2BD7BF2100FA752E /* Charts.swift */; };
 		C9ED1E002BCE930500610988 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED1DFF2BCE930500610988 /* DestinationView.swift */; };
@@ -32,6 +40,14 @@
 		C91F90622B72670900CE0BA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C91F90652B72670900CE0BA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C94E890F2B8E18430013B31B /* GeometryStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryStack.swift; sourceTree = "<group>"; };
+		C95061B52BE115DA00CA52EA /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		C95061B72BE1164100CA52EA /* Tab1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1View.swift; sourceTree = "<group>"; };
+		C95061B92BE1164E00CA52EA /* Tab2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2View.swift; sourceTree = "<group>"; };
+		C95061BB2BE1166000CA52EA /* Tab3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3View.swift; sourceTree = "<group>"; };
+		C95061BD2BE1167000CA52EA /* Tab4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab4View.swift; sourceTree = "<group>"; };
+		C95061BF2BE1167B00CA52EA /* Tab5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab5View.swift; sourceTree = "<group>"; };
+		C95061C12BE1168F00CA52EA /* Tab6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab6View.swift; sourceTree = "<group>"; };
+		C95061C32BE119E600CA52EA /* TabsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsController.swift; sourceTree = "<group>"; };
 		C96C773F2BA9CB17006098EA /* Vollda-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vollda-Bold.otf"; sourceTree = "<group>"; };
 		C96C77412BA9CB26006098EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C9708B6B2BD7BF2100FA752E /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
@@ -75,6 +91,14 @@
 				C96C77412BA9CB26006098EA /* Info.plist */,
 				C96C773F2BA9CB17006098EA /* Vollda-Bold.otf */,
 				C91F905E2B72670800CE0BA6 /* MasterSwiftUIApp.swift */,
+				C95061C32BE119E600CA52EA /* TabsController.swift */,
+				C95061B52BE115DA00CA52EA /* TabsView.swift */,
+				C95061B72BE1164100CA52EA /* Tab1View.swift */,
+				C95061B92BE1164E00CA52EA /* Tab2View.swift */,
+				C95061BB2BE1166000CA52EA /* Tab3View.swift */,
+				C95061BD2BE1167000CA52EA /* Tab4View.swift */,
+				C95061BF2BE1167B00CA52EA /* Tab5View.swift */,
+				C95061C12BE1168F00CA52EA /* Tab6View.swift */,
 				C9708B6B2BD7BF2100FA752E /* Charts.swift */,
 				C91F90602B72670800CE0BA6 /* ContentView.swift */,
 				C9ED1DFF2BCE930500610988 /* DestinationView.swift */,
@@ -173,14 +197,22 @@
 				C9ED1E0A2BCE9BD400610988 /* NavigationLinkViewModifier.swift in Sources */,
 				C9708B6C2BD7BF2100FA752E /* Charts.swift in Sources */,
 				C9ED1E022BCE94F300610988 /* NavigationSheet.swift in Sources */,
+				C95061BA2BE1164E00CA52EA /* Tab2View.swift in Sources */,
 				C9ED1E082BCE9AE700610988 /* NavigationPush.swift in Sources */,
+				C95061C02BE1167B00CA52EA /* Tab5View.swift in Sources */,
+				C95061B82BE1164100CA52EA /* Tab1View.swift in Sources */,
 				C90B80E92B84DD32006BFBA7 /* BackgroundIgnoringSafeArea.swift in Sources */,
 				C91F90612B72670800CE0BA6 /* ContentView.swift in Sources */,
+				C95061B62BE115DA00CA52EA /* TabsView.swift in Sources */,
+				C95061BC2BE1166000CA52EA /* Tab3View.swift in Sources */,
 				C90B80EB2B84E01E006BFBA7 /* Pusher.swift in Sources */,
+				C95061C42BE119E600CA52EA /* TabsController.swift in Sources */,
 				C9ED1E042BCE96BC00610988 /* NavigationFullScreenCover.swift in Sources */,
+				C95061C22BE1168F00CA52EA /* Tab6View.swift in Sources */,
 				C9ED1E002BCE930500610988 /* DestinationView.swift in Sources */,
 				C94E89102B8E18430013B31B /* GeometryStack.swift in Sources */,
 				C91F905F2B72670800CE0BA6 /* MasterSwiftUIApp.swift in Sources */,
+				C95061BE2BE1167000CA52EA /* Tab4View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

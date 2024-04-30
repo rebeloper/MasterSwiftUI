@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct Tab1View: View {
+    
+    @EnvironmentObject private var tabsController: TabsController
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Hello, Tab1View!")
+            Button("Go to 3") {
+//                tabsController.selectedTab = Tabs.three
+                tabsController.jump(to: .three)
+            }
+        }
     }
 }
 
-#Preview {
-    Tab1View()
-}
