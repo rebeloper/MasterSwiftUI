@@ -17,8 +17,9 @@ struct MasterSwiftUIApp: App {
 //            NavigationStack {
 //                ContentView()
 //            }
-            TabsView()
-                .environmentObject(tabsController)
+//            TabsView()
+//                .environmentObject(tabsController)
+            TextFieldExamplesView()
         }
     }
 }

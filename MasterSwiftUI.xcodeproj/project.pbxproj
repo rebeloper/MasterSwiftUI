@@ -22,6 +22,7 @@
 		C95061C02BE1167B00CA52EA /* Tab5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95061BF2BE1167B00CA52EA /* Tab5View.swift */; };
 		C95061C22BE1168F00CA52EA /* Tab6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95061C12BE1168F00CA52EA /* Tab6View.swift */; };
 		C95061C42BE119E600CA52EA /* TabsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95061C32BE119E600CA52EA /* TabsController.swift */; };
+		C95062152BEA50F600CA52EA /* TextFieldExamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95062142BEA50F600CA52EA /* TextFieldExamplesView.swift */; };
 		C96C77402BA9CB17006098EA /* Vollda-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C96C773F2BA9CB17006098EA /* Vollda-Bold.otf */; };
 		C9708B6C2BD7BF2100FA752E /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9708B6B2BD7BF2100FA752E /* Charts.swift */; };
 		C9ED1E002BCE930500610988 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED1DFF2BCE930500610988 /* DestinationView.swift */; };
@@ -48,6 +49,7 @@
 		C95061BF2BE1167B00CA52EA /* Tab5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab5View.swift; sourceTree = "<group>"; };
 		C95061C12BE1168F00CA52EA /* Tab6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab6View.swift; sourceTree = "<group>"; };
 		C95061C32BE119E600CA52EA /* TabsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsController.swift; sourceTree = "<group>"; };
+		C95062142BEA50F600CA52EA /* TextFieldExamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExamplesView.swift; sourceTree = "<group>"; };
 		C96C773F2BA9CB17006098EA /* Vollda-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vollda-Bold.otf"; sourceTree = "<group>"; };
 		C96C77412BA9CB26006098EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C9708B6B2BD7BF2100FA752E /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				C96C77412BA9CB26006098EA /* Info.plist */,
 				C96C773F2BA9CB17006098EA /* Vollda-Bold.otf */,
 				C91F905E2B72670800CE0BA6 /* MasterSwiftUIApp.swift */,
+				C95062142BEA50F600CA52EA /* TextFieldExamplesView.swift */,
 				C95061C32BE119E600CA52EA /* TabsController.swift */,
 				C95061B52BE115DA00CA52EA /* TabsView.swift */,
 				C95061B72BE1164100CA52EA /* Tab1View.swift */,
@@ -211,6 +214,7 @@
 				C95061C22BE1168F00CA52EA /* Tab6View.swift in Sources */,
 				C9ED1E002BCE930500610988 /* DestinationView.swift in Sources */,
 				C94E89102B8E18430013B31B /* GeometryStack.swift in Sources */,
+				C95062152BEA50F600CA52EA /* TextFieldExamplesView.swift in Sources */,
 				C91F905F2B72670800CE0BA6 /* MasterSwiftUIApp.swift in Sources */,
 				C95061BE2BE1167000CA52EA /* Tab4View.swift in Sources */,
 			);
