@@ -18,7 +18,7 @@
 // Charts
 // TabView
 // TextField, SecureField, TextEditor
-// Next week: Stepper, Slider, Gauge, Form
+// Stepper, Slider, Gauge, Form
 
 import SwiftUI
 
