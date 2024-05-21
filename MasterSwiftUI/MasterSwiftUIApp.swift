@@ -12,6 +12,8 @@ struct MasterSwiftUIApp: App {
     
     @StateObject private var tabsController = TabsController()
     
+    @State private var appController = AppController()
+    
     var body: some Scene {
         WindowGroup {
 //            NavigationStack {
@@ -19,7 +21,9 @@ struct MasterSwiftUIApp: App {
 //            }
 //            TabsView()
 //                .environmentObject(tabsController)
-            TextFieldExamplesView()
+//            TextFieldExamplesView()
+            DataHandlingView()
+                .environment(appController)
         }
     }
 }
