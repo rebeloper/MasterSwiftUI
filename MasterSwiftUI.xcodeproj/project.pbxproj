@@ -30,6 +30,7 @@
 		C9CD7CE82BFCC61F0073494E /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD7CE72BFCC61F0073494E /* MyTextField.swift */; };
 		C9CD7CEA2BFCC6D70073494E /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD7CE92BFCC6D70073494E /* AppController.swift */; };
 		C9CD7CEC2BFCC8260073494E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD7CEB2BFCC8260073494E /* Person.swift */; };
+		C9CD7DD32C0600560073494E /* NavStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD7DD22C0600560073494E /* NavStackView.swift */; };
 		C9ED1E002BCE930500610988 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED1DFF2BCE930500610988 /* DestinationView.swift */; };
 		C9ED1E022BCE94F300610988 /* NavigationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED1E012BCE94F300610988 /* NavigationSheet.swift */; };
 		C9ED1E042BCE96BC00610988 /* NavigationFullScreenCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ED1E032BCE96BC00610988 /* NavigationFullScreenCover.swift */; };
@@ -63,6 +64,7 @@
 		C9CD7CE72BFCC61F0073494E /* MyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
 		C9CD7CE92BFCC6D70073494E /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
 		C9CD7CEB2BFCC8260073494E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		C9CD7DD22C0600560073494E /* NavStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavStackView.swift; sourceTree = "<group>"; };
 		C9ED1DFF2BCE930500610988 /* DestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
 		C9ED1E012BCE94F300610988 /* NavigationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSheet.swift; sourceTree = "<group>"; };
 		C9ED1E032BCE96BC00610988 /* NavigationFullScreenCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationFullScreenCover.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				C96C77412BA9CB26006098EA /* Info.plist */,
 				C96C773F2BA9CB17006098EA /* Vollda-Bold.otf */,
 				C91F905E2B72670800CE0BA6 /* MasterSwiftUIApp.swift */,
+				C9CD7DD22C0600560073494E /* NavStackView.swift */,
 				C9CD7CE52BFCC52E0073494E /* DataHandlingView.swift */,
 				C9CD7CE92BFCC6D70073494E /* AppController.swift */,
 				C9CD7CEB2BFCC8260073494E /* Person.swift */,
@@ -231,6 +234,7 @@
 				C95316A52BF38A0700B7D3F7 /* MicsView.swift in Sources */,
 				C9ED1E042BCE96BC00610988 /* NavigationFullScreenCover.swift in Sources */,
 				C95061C22BE1168F00CA52EA /* Tab6View.swift in Sources */,
+				C9CD7DD32C0600560073494E /* NavStackView.swift in Sources */,
 				C9CD7CE82BFCC61F0073494E /* MyTextField.swift in Sources */,
 				C9ED1E002BCE930500610988 /* DestinationView.swift in Sources */,
 				C94E89102B8E18430013B31B /* GeometryStack.swift in Sources */,

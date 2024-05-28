@@ -22,8 +22,9 @@ struct MasterSwiftUIApp: App {
 //            TabsView()
 //                .environmentObject(tabsController)
 //            TextFieldExamplesView()
-            DataHandlingView()
-                .environment(appController)
+//            DataHandlingView()
+//                .environment(appController)
+            NavStackView()
         }
     }
 }
