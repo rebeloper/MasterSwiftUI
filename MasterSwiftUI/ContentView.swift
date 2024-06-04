@@ -20,6 +20,7 @@
 // TextField, SecureField, TextEditor
 // Stepper, Slider, Gauge, Form
 // NavigationStack, .toolbar
+// Color, Image
 
 import SwiftUI
 

@@ -24,7 +24,7 @@ struct MasterSwiftUIApp: App {
 //            TextFieldExamplesView()
 //            DataHandlingView()
 //                .environment(appController)
-            NavStackView()
+            ImageView()
         }
     }
 }
