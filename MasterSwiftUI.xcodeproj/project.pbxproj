@@ -26,6 +26,7 @@
 		C95316A52BF38A0700B7D3F7 /* MicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95316A42BF38A0700B7D3F7 /* MicsView.swift */; };
 		C96C77402BA9CB17006098EA /* Vollda-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C96C773F2BA9CB17006098EA /* Vollda-Bold.otf */; };
 		C9708B6C2BD7BF2100FA752E /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9708B6B2BD7BF2100FA752E /* Charts.swift */; };
+		C9812C552C45473500B98933 /* CircularShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9812C542C45473500B98933 /* CircularShapesView.swift */; };
 		C9CD7CE62BFCC52E0073494E /* DataHandlingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD7CE52BFCC52E0073494E /* DataHandlingView.swift */; };
 		C9CD7CE82BFCC61F0073494E /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD7CE72BFCC61F0073494E /* MyTextField.swift */; };
 		C9CD7CEA2BFCC6D70073494E /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD7CE92BFCC6D70073494E /* AppController.swift */; };
@@ -62,6 +63,7 @@
 		C96C773F2BA9CB17006098EA /* Vollda-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vollda-Bold.otf"; sourceTree = "<group>"; };
 		C96C77412BA9CB26006098EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C9708B6B2BD7BF2100FA752E /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
+		C9812C542C45473500B98933 /* CircularShapesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularShapesView.swift; sourceTree = "<group>"; };
 		C9CD7CE52BFCC52E0073494E /* DataHandlingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandlingView.swift; sourceTree = "<group>"; };
 		C9CD7CE72BFCC61F0073494E /* MyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
 		C9CD7CE92BFCC6D70073494E /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				C96C77412BA9CB26006098EA /* Info.plist */,
 				C96C773F2BA9CB17006098EA /* Vollda-Bold.otf */,
+				C9812C542C45473500B98933 /* CircularShapesView.swift */,
 				C91F905E2B72670800CE0BA6 /* MasterSwiftUIApp.swift */,
 				C9DAB5752C0F3B120039F0A5 /* ColorView.swift */,
 				C9DAB5772C0F3E570039F0A5 /* ImageView.swift */,
@@ -232,6 +235,7 @@
 				C95061B82BE1164100CA52EA /* Tab1View.swift in Sources */,
 				C9CD7CE62BFCC52E0073494E /* DataHandlingView.swift in Sources */,
 				C90B80E92B84DD32006BFBA7 /* BackgroundIgnoringSafeArea.swift in Sources */,
+				C9812C552C45473500B98933 /* CircularShapesView.swift in Sources */,
 				C91F90612B72670800CE0BA6 /* ContentView.swift in Sources */,
 				C9DAB5782C0F3E570039F0A5 /* ImageView.swift in Sources */,
 				C95061B62BE115DA00CA52EA /* TabsView.swift in Sources */,
