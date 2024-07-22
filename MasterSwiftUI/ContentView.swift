@@ -22,6 +22,7 @@
 // NavigationStack, .toolbar
 // Color, Image
 // Circular Shapes
+// Rectangular Shapes
 
 import SwiftUI
 
