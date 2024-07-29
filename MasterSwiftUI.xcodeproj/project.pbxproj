@@ -28,6 +28,7 @@
 		C9708B6C2BD7BF2100FA752E /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9708B6B2BD7BF2100FA752E /* Charts.swift */; };
 		C9812C552C45473500B98933 /* CircularShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9812C542C45473500B98933 /* CircularShapesView.swift */; };
 		C9812E052C4E824700B98933 /* RectangularShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9812E042C4E824700B98933 /* RectangularShapesView.swift */; };
+		C9917E282C57BDF80032A2F6 /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9917E272C57BDF80032A2F6 /* AlertsView.swift */; };
 		C9CD7CE62BFCC52E0073494E /* DataHandlingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD7CE52BFCC52E0073494E /* DataHandlingView.swift */; };
 		C9CD7CE82BFCC61F0073494E /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD7CE72BFCC61F0073494E /* MyTextField.swift */; };
 		C9CD7CEA2BFCC6D70073494E /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD7CE92BFCC6D70073494E /* AppController.swift */; };
@@ -66,6 +67,7 @@
 		C9708B6B2BD7BF2100FA752E /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
 		C9812C542C45473500B98933 /* CircularShapesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularShapesView.swift; sourceTree = "<group>"; };
 		C9812E042C4E824700B98933 /* RectangularShapesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularShapesView.swift; sourceTree = "<group>"; };
+		C9917E272C57BDF80032A2F6 /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
 		C9CD7CE52BFCC52E0073494E /* DataHandlingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandlingView.swift; sourceTree = "<group>"; };
 		C9CD7CE72BFCC61F0073494E /* MyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
 		C9CD7CE92BFCC6D70073494E /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				C96C77412BA9CB26006098EA /* Info.plist */,
 				C96C773F2BA9CB17006098EA /* Vollda-Bold.otf */,
+				C9917E272C57BDF80032A2F6 /* AlertsView.swift */,
 				C9812E042C4E824700B98933 /* RectangularShapesView.swift */,
 				C9812C542C45473500B98933 /* CircularShapesView.swift */,
 				C91F905E2B72670800CE0BA6 /* MasterSwiftUIApp.swift */,
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9917E282C57BDF80032A2F6 /* AlertsView.swift in Sources */,
 				C9CD7CEC2BFCC8260073494E /* Person.swift in Sources */,
 				C9ED1E0A2BCE9BD400610988 /* NavigationLinkViewModifier.swift in Sources */,
 				C9708B6C2BD7BF2100FA752E /* Charts.swift in Sources */,
