@@ -1,0 +1,15 @@
+{
+  "originHash" : "6c1ca4d9441742730ef6a1c872fe6aafd5d988b86675db75f98f74912d07b063",
+  "pins" : [
+    {
+      "identity" : "swiftuialerts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rebeloper/SwiftUIAlerts.git",
+      "state" : {
+        "revision" : "f804a3aaaf5ccc39411b27a0295121652cc17312",
+        "version" : "2.0.6"
+      }
+    }
+  ],
+  "version" : 3
+}

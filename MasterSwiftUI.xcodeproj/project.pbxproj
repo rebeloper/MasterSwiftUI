@@ -13,6 +13,8 @@
 		C91F90612B72670800CE0BA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91F90602B72670800CE0BA6 /* ContentView.swift */; };
 		C91F90632B72670900CE0BA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91F90622B72670900CE0BA6 /* Assets.xcassets */; };
 		C91F90662B72670900CE0BA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91F90652B72670900CE0BA6 /* Preview Assets.xcassets */; };
+		C92322982C64C138009B5D6B /* SwiftUIAlerts in Frameworks */ = {isa = PBXBuildFile; productRef = C92322972C64C138009B5D6B /* SwiftUIAlerts */; };
+		C923229A2C64C157009B5D6B /* AlertControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92322992C64C157009B5D6B /* AlertControllerView.swift */; };
 		C94E89102B8E18430013B31B /* GeometryStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E890F2B8E18430013B31B /* GeometryStack.swift */; };
 		C95061B62BE115DA00CA52EA /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95061B52BE115DA00CA52EA /* TabsView.swift */; };
 		C95061B82BE1164100CA52EA /* Tab1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95061B72BE1164100CA52EA /* Tab1View.swift */; };
@@ -51,6 +53,7 @@
 		C91F90602B72670800CE0BA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C91F90622B72670900CE0BA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C91F90652B72670900CE0BA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C92322992C64C157009B5D6B /* AlertControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerView.swift; sourceTree = "<group>"; };
 		C94E890F2B8E18430013B31B /* GeometryStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryStack.swift; sourceTree = "<group>"; };
 		C95061B52BE115DA00CA52EA /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		C95061B72BE1164100CA52EA /* Tab1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1View.swift; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92322982C64C138009B5D6B /* SwiftUIAlerts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +118,7 @@
 			children = (
 				C96C77412BA9CB26006098EA /* Info.plist */,
 				C96C773F2BA9CB17006098EA /* Vollda-Bold.otf */,
+				C92322992C64C157009B5D6B /* AlertControllerView.swift */,
 				C9917E272C57BDF80032A2F6 /* AlertsView.swift */,
 				C9812E042C4E824700B98933 /* RectangularShapesView.swift */,
 				C9812C542C45473500B98933 /* CircularShapesView.swift */,
@@ -175,6 +180,9 @@
 			dependencies = (
 			);
 			name = MasterSwiftUI;
+			packageProductDependencies = (
+				C92322972C64C138009B5D6B /* SwiftUIAlerts */,
+			);
 			productName = MasterSwiftUI;
 			productReference = C91F905B2B72670800CE0BA6 /* MasterSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -203,6 +211,9 @@
 				Base,
 			);
 			mainGroup = C91F90522B72670800CE0BA6;
+			packageReferences = (
+				C92322962C64C138009B5D6B /* XCRemoteSwiftPackageReference "SwiftUIAlerts" */,
+			);
 			productRefGroup = C91F905C2B72670800CE0BA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,6 +252,7 @@
 				C95061C02BE1167B00CA52EA /* Tab5View.swift in Sources */,
 				C95061B82BE1164100CA52EA /* Tab1View.swift in Sources */,
 				C9CD7CE62BFCC52E0073494E /* DataHandlingView.swift in Sources */,
+				C923229A2C64C157009B5D6B /* AlertControllerView.swift in Sources */,
 				C90B80E92B84DD32006BFBA7 /* BackgroundIgnoringSafeArea.swift in Sources */,
 				C9812C552C45473500B98933 /* CircularShapesView.swift in Sources */,
 				C91F90612B72670800CE0BA6 /* ContentView.swift in Sources */,
@@ -468,6 +480,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C92322962C64C138009B5D6B /* XCRemoteSwiftPackageReference "SwiftUIAlerts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebeloper/SwiftUIAlerts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C92322972C64C138009B5D6B /* SwiftUIAlerts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C92322962C64C138009B5D6B /* XCRemoteSwiftPackageReference "SwiftUIAlerts" */;
+			productName = SwiftUIAlerts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C91F90532B72670800CE0BA6 /* Project object */;
 }
