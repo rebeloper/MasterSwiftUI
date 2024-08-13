@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import SwiftUIAlerts
+//import SwiftUIAlerts
 
 @main
 struct MasterSwiftUIApp: App {
@@ -26,8 +26,9 @@ struct MasterSwiftUIApp: App {
 //            DataHandlingView()
 //                .environment(appController)
 //            ImageView()
-            AlertControllerView()
-                .usesAlertController()
+//            AlertControllerView()
+//                .usesAlertController()
+            SwiftUIAlertsContentView()
         }
     }
 }
