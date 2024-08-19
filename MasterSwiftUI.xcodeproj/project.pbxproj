@@ -20,6 +20,11 @@
 		C92323252C6B5AE9009B5D6B /* AlertDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92323242C6B5AE9009B5D6B /* AlertDetails.swift */; };
 		C92323272C6B5B4C009B5D6B /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92323262C6B5B4C009B5D6B /* AlertButton.swift */; };
 		C92323292C6B5C9E009B5D6B /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92323282C6B5C9E009B5D6B /* AlertController.swift */; };
+		C92323342C734FF7009B5D6B /* AlertControllerKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92323332C734FF7009B5D6B /* AlertControllerKey.swift */; };
+		C92323362C73504A009B5D6B /* Alert+EnvironmentValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92323352C73504A009B5D6B /* Alert+EnvironmentValues.swift */; };
+		C92323382C7350CB009B5D6B /* AlertControllerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92323372C7350CB009B5D6B /* AlertControllerModifier.swift */; };
+		C923233A2C7353B7009B5D6B /* UsesAlertControllerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92323392C7353B7009B5D6B /* UsesAlertControllerModifier.swift */; };
+		C923233C2C73541B009B5D6B /* Alert+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C923233B2C73541B009B5D6B /* Alert+View.swift */; };
 		C94E89102B8E18430013B31B /* GeometryStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E890F2B8E18430013B31B /* GeometryStack.swift */; };
 		C95061B62BE115DA00CA52EA /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95061B52BE115DA00CA52EA /* TabsView.swift */; };
 		C95061B82BE1164100CA52EA /* Tab1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95061B72BE1164100CA52EA /* Tab1View.swift */; };
@@ -65,6 +70,11 @@
 		C92323242C6B5AE9009B5D6B /* AlertDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDetails.swift; sourceTree = "<group>"; };
 		C92323262C6B5B4C009B5D6B /* AlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
 		C92323282C6B5C9E009B5D6B /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		C92323332C734FF7009B5D6B /* AlertControllerKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerKey.swift; sourceTree = "<group>"; };
+		C92323352C73504A009B5D6B /* Alert+EnvironmentValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+EnvironmentValues.swift"; sourceTree = "<group>"; };
+		C92323372C7350CB009B5D6B /* AlertControllerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerModifier.swift; sourceTree = "<group>"; };
+		C92323392C7353B7009B5D6B /* UsesAlertControllerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsesAlertControllerModifier.swift; sourceTree = "<group>"; };
+		C923233B2C73541B009B5D6B /* Alert+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+View.swift"; sourceTree = "<group>"; };
 		C94E890F2B8E18430013B31B /* GeometryStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryStack.swift; sourceTree = "<group>"; };
 		C95061B52BE115DA00CA52EA /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		C95061B72BE1164100CA52EA /* Tab1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1View.swift; sourceTree = "<group>"; };
@@ -184,6 +194,11 @@
 				C92323262C6B5B4C009B5D6B /* AlertButton.swift */,
 				C92323242C6B5AE9009B5D6B /* AlertDetails.swift */,
 				C92323282C6B5C9E009B5D6B /* AlertController.swift */,
+				C92323332C734FF7009B5D6B /* AlertControllerKey.swift */,
+				C92323352C73504A009B5D6B /* Alert+EnvironmentValues.swift */,
+				C92323372C7350CB009B5D6B /* AlertControllerModifier.swift */,
+				C92323392C7353B7009B5D6B /* UsesAlertControllerModifier.swift */,
+				C923233B2C73541B009B5D6B /* Alert+View.swift */,
 			);
 			path = SwiftUIAlerts;
 			sourceTree = "<group>";
@@ -273,6 +288,8 @@
 				C92323212C6B5A3A009B5D6B /* AlertType.swift in Sources */,
 				C9ED1E082BCE9AE700610988 /* NavigationPush.swift in Sources */,
 				C9DAB5762C0F3B120039F0A5 /* ColorView.swift in Sources */,
+				C92323342C734FF7009B5D6B /* AlertControllerKey.swift in Sources */,
+				C923233C2C73541B009B5D6B /* Alert+View.swift in Sources */,
 				C95061C02BE1167B00CA52EA /* Tab5View.swift in Sources */,
 				C95061B82BE1164100CA52EA /* Tab1View.swift in Sources */,
 				C9CD7CE62BFCC52E0073494E /* DataHandlingView.swift in Sources */,
@@ -285,7 +302,9 @@
 				C95061B62BE115DA00CA52EA /* TabsView.swift in Sources */,
 				C9CD7CEA2BFCC6D70073494E /* AppController.swift in Sources */,
 				C95061BC2BE1166000CA52EA /* Tab3View.swift in Sources */,
+				C923233A2C7353B7009B5D6B /* UsesAlertControllerModifier.swift in Sources */,
 				C90B80EB2B84E01E006BFBA7 /* Pusher.swift in Sources */,
+				C92323362C73504A009B5D6B /* Alert+EnvironmentValues.swift in Sources */,
 				C923231F2C6B59B9009B5D6B /* SwiftUIAlertsContentView.swift in Sources */,
 				C95061C42BE119E600CA52EA /* TabsController.swift in Sources */,
 				C95316A52BF38A0700B7D3F7 /* MicsView.swift in Sources */,
@@ -301,6 +320,7 @@
 				C91F905F2B72670800CE0BA6 /* MasterSwiftUIApp.swift in Sources */,
 				C95061BE2BE1167000CA52EA /* Tab4View.swift in Sources */,
 				C9812E052C4E824700B98933 /* RectangularShapesView.swift in Sources */,
+				C92323382C7350CB009B5D6B /* AlertControllerModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
