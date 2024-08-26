@@ -25,6 +25,12 @@
 		C92323382C7350CB009B5D6B /* AlertControllerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92323372C7350CB009B5D6B /* AlertControllerModifier.swift */; };
 		C923233A2C7353B7009B5D6B /* UsesAlertControllerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92323392C7353B7009B5D6B /* UsesAlertControllerModifier.swift */; };
 		C923233C2C73541B009B5D6B /* Alert+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C923233B2C73541B009B5D6B /* Alert+View.swift */; };
+		C923C97A2C7CA688002873E6 /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C923C9792C7CA688002873E6 /* AlertType.swift */; };
+		C923C97C2C7CA6C2002873E6 /* AlertPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C923C97B2C7CA6C2002873E6 /* AlertPreset.swift */; };
+		C923C97E2C7CA71E002873E6 /* AlertActionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C923C97D2C7CA71E002873E6 /* AlertActionLabel.swift */; };
+		C923C9802C7CA7EF002873E6 /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C923C97F2C7CA7EF002873E6 /* AlertAction.swift */; };
+		C923C9822C7CA89A002873E6 /* AlertOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C923C9812C7CA89A002873E6 /* AlertOptions.swift */; };
+		C923C9842C7CA928002873E6 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C923C9832C7CA928002873E6 /* AlertManager.swift */; };
 		C94E89102B8E18430013B31B /* GeometryStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E890F2B8E18430013B31B /* GeometryStack.swift */; };
 		C95061B62BE115DA00CA52EA /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95061B52BE115DA00CA52EA /* TabsView.swift */; };
 		C95061B82BE1164100CA52EA /* Tab1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95061B72BE1164100CA52EA /* Tab1View.swift */; };
@@ -75,6 +81,12 @@
 		C92323372C7350CB009B5D6B /* AlertControllerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerModifier.swift; sourceTree = "<group>"; };
 		C92323392C7353B7009B5D6B /* UsesAlertControllerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsesAlertControllerModifier.swift; sourceTree = "<group>"; };
 		C923233B2C73541B009B5D6B /* Alert+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+View.swift"; sourceTree = "<group>"; };
+		C923C9792C7CA688002873E6 /* AlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
+		C923C97B2C7CA6C2002873E6 /* AlertPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPreset.swift; sourceTree = "<group>"; };
+		C923C97D2C7CA71E002873E6 /* AlertActionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionLabel.swift; sourceTree = "<group>"; };
+		C923C97F2C7CA7EF002873E6 /* AlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAction.swift; sourceTree = "<group>"; };
+		C923C9812C7CA89A002873E6 /* AlertOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertOptions.swift; sourceTree = "<group>"; };
+		C923C9832C7CA928002873E6 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		C94E890F2B8E18430013B31B /* GeometryStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryStack.swift; sourceTree = "<group>"; };
 		C95061B52BE115DA00CA52EA /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		C95061B72BE1164100CA52EA /* Tab1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1View.swift; sourceTree = "<group>"; };
@@ -138,6 +150,7 @@
 			children = (
 				C96C77412BA9CB26006098EA /* Info.plist */,
 				C96C773F2BA9CB17006098EA /* Vollda-Bold.otf */,
+				C923C9782C7CA626002873E6 /* SwiftUIAlertManager */,
 				C923231D2C6B59A0009B5D6B /* SwiftUIAlerts */,
 				C923231E2C6B59B9009B5D6B /* SwiftUIAlertsContentView.swift */,
 				C92322992C64C157009B5D6B /* AlertControllerView.swift */,
@@ -201,6 +214,19 @@
 				C923233B2C73541B009B5D6B /* Alert+View.swift */,
 			);
 			path = SwiftUIAlerts;
+			sourceTree = "<group>";
+		};
+		C923C9782C7CA626002873E6 /* SwiftUIAlertManager */ = {
+			isa = PBXGroup;
+			children = (
+				C923C9792C7CA688002873E6 /* AlertType.swift */,
+				C923C97B2C7CA6C2002873E6 /* AlertPreset.swift */,
+				C923C97D2C7CA71E002873E6 /* AlertActionLabel.swift */,
+				C923C97F2C7CA7EF002873E6 /* AlertAction.swift */,
+				C923C9812C7CA89A002873E6 /* AlertOptions.swift */,
+				C923C9832C7CA928002873E6 /* AlertManager.swift */,
+			);
+			path = SwiftUIAlertManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,9 +305,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9917E282C57BDF80032A2F6 /* AlertsView.swift in Sources */,
+				C923C9822C7CA89A002873E6 /* AlertOptions.swift in Sources */,
 				C9CD7CEC2BFCC8260073494E /* Person.swift in Sources */,
 				C9ED1E0A2BCE9BD400610988 /* NavigationLinkViewModifier.swift in Sources */,
 				C9708B6C2BD7BF2100FA752E /* Charts.swift in Sources */,
+				C923C9842C7CA928002873E6 /* AlertManager.swift in Sources */,
 				C9ED1E022BCE94F300610988 /* NavigationSheet.swift in Sources */,
 				C92323232C6B5AAA009B5D6B /* AlertButtonType.swift in Sources */,
 				C95061BA2BE1164E00CA52EA /* Tab2View.swift in Sources */,
@@ -293,6 +321,7 @@
 				C95061C02BE1167B00CA52EA /* Tab5View.swift in Sources */,
 				C95061B82BE1164100CA52EA /* Tab1View.swift in Sources */,
 				C9CD7CE62BFCC52E0073494E /* DataHandlingView.swift in Sources */,
+				C923C97E2C7CA71E002873E6 /* AlertActionLabel.swift in Sources */,
 				C923229A2C64C157009B5D6B /* AlertControllerView.swift in Sources */,
 				C90B80E92B84DD32006BFBA7 /* BackgroundIgnoringSafeArea.swift in Sources */,
 				C92323272C6B5B4C009B5D6B /* AlertButton.swift in Sources */,
@@ -302,6 +331,7 @@
 				C95061B62BE115DA00CA52EA /* TabsView.swift in Sources */,
 				C9CD7CEA2BFCC6D70073494E /* AppController.swift in Sources */,
 				C95061BC2BE1166000CA52EA /* Tab3View.swift in Sources */,
+				C923C9802C7CA7EF002873E6 /* AlertAction.swift in Sources */,
 				C923233A2C7353B7009B5D6B /* UsesAlertControllerModifier.swift in Sources */,
 				C90B80EB2B84E01E006BFBA7 /* Pusher.swift in Sources */,
 				C92323362C73504A009B5D6B /* Alert+EnvironmentValues.swift in Sources */,
@@ -310,6 +340,7 @@
 				C95316A52BF38A0700B7D3F7 /* MicsView.swift in Sources */,
 				C9ED1E042BCE96BC00610988 /* NavigationFullScreenCover.swift in Sources */,
 				C95061C22BE1168F00CA52EA /* Tab6View.swift in Sources */,
+				C923C97A2C7CA688002873E6 /* AlertType.swift in Sources */,
 				C92323292C6B5C9E009B5D6B /* AlertController.swift in Sources */,
 				C92323252C6B5AE9009B5D6B /* AlertDetails.swift in Sources */,
 				C9CD7DD32C0600560073494E /* NavStackView.swift in Sources */,
@@ -317,6 +348,7 @@
 				C9ED1E002BCE930500610988 /* DestinationView.swift in Sources */,
 				C94E89102B8E18430013B31B /* GeometryStack.swift in Sources */,
 				C95062152BEA50F600CA52EA /* TextFieldExamplesView.swift in Sources */,
+				C923C97C2C7CA6C2002873E6 /* AlertPreset.swift in Sources */,
 				C91F905F2B72670800CE0BA6 /* MasterSwiftUIApp.swift in Sources */,
 				C95061BE2BE1167000CA52EA /* Tab4View.swift in Sources */,
 				C9812E052C4E824700B98933 /* RectangularShapesView.swift in Sources */,

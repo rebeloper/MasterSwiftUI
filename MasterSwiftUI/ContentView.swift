@@ -25,7 +25,8 @@
 // Rectangular Shapes
 // Alert, Confirmation Dialog
 // Alert Controller
-// Building SwidftUI Alerts
+// Building SwiftUI Alerts
+// Building SwiftUI Alert Manager (pre iOS17)
 
 import SwiftUI
 
