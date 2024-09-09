@@ -15,7 +15,7 @@
 		C91F90662B72670900CE0BA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91F90652B72670900CE0BA6 /* Preview Assets.xcassets */; };
 		C923229A2C64C157009B5D6B /* AlertControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92322992C64C157009B5D6B /* AlertControllerView.swift */; };
 		C923231F2C6B59B9009B5D6B /* SwiftUIAlertsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C923231E2C6B59B9009B5D6B /* SwiftUIAlertsContentView.swift */; };
-		C92323212C6B5A3A009B5D6B /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92323202C6B5A3A009B5D6B /* AlertType.swift */; };
+		C92323212C6B5A3A009B5D6B /* AlertType0.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92323202C6B5A3A009B5D6B /* AlertType0.swift */; };
 		C92323232C6B5AAA009B5D6B /* AlertButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92323222C6B5AAA009B5D6B /* AlertButtonType.swift */; };
 		C92323252C6B5AE9009B5D6B /* AlertDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92323242C6B5AE9009B5D6B /* AlertDetails.swift */; };
 		C92323272C6B5B4C009B5D6B /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92323262C6B5B4C009B5D6B /* AlertButton.swift */; };
@@ -51,6 +51,7 @@
 		C9812C552C45473500B98933 /* CircularShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9812C542C45473500B98933 /* CircularShapesView.swift */; };
 		C9812E052C4E824700B98933 /* RectangularShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9812E042C4E824700B98933 /* RectangularShapesView.swift */; };
 		C9917E282C57BDF80032A2F6 /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9917E272C57BDF80032A2F6 /* AlertsView.swift */; };
+		C9A915572C8F1B4B00202A43 /* AsyncAwaitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A915562C8F1B4B00202A43 /* AsyncAwaitView.swift */; };
 		C9CD7CE62BFCC52E0073494E /* DataHandlingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD7CE52BFCC52E0073494E /* DataHandlingView.swift */; };
 		C9CD7CE82BFCC61F0073494E /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD7CE72BFCC61F0073494E /* MyTextField.swift */; };
 		C9CD7CEA2BFCC6D70073494E /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD7CE92BFCC6D70073494E /* AppController.swift */; };
@@ -75,7 +76,7 @@
 		C91F90652B72670900CE0BA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C92322992C64C157009B5D6B /* AlertControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerView.swift; sourceTree = "<group>"; };
 		C923231E2C6B59B9009B5D6B /* SwiftUIAlertsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAlertsContentView.swift; sourceTree = "<group>"; };
-		C92323202C6B5A3A009B5D6B /* AlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
+		C92323202C6B5A3A009B5D6B /* AlertType0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertType0.swift; sourceTree = "<group>"; };
 		C92323222C6B5AAA009B5D6B /* AlertButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButtonType.swift; sourceTree = "<group>"; };
 		C92323242C6B5AE9009B5D6B /* AlertDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDetails.swift; sourceTree = "<group>"; };
 		C92323262C6B5B4C009B5D6B /* AlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
@@ -112,6 +113,7 @@
 		C9812C542C45473500B98933 /* CircularShapesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularShapesView.swift; sourceTree = "<group>"; };
 		C9812E042C4E824700B98933 /* RectangularShapesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularShapesView.swift; sourceTree = "<group>"; };
 		C9917E272C57BDF80032A2F6 /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
+		C9A915562C8F1B4B00202A43 /* AsyncAwaitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitView.swift; sourceTree = "<group>"; };
 		C9CD7CE52BFCC52E0073494E /* DataHandlingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandlingView.swift; sourceTree = "<group>"; };
 		C9CD7CE72BFCC61F0073494E /* MyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
 		C9CD7CE92BFCC6D70073494E /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				C96C77412BA9CB26006098EA /* Info.plist */,
+				C9A915562C8F1B4B00202A43 /* AsyncAwaitView.swift */,
 				C96C773F2BA9CB17006098EA /* Vollda-Bold.otf */,
 				C923C9782C7CA626002873E6 /* SwiftUIAlertManager */,
 				C923231D2C6B59A0009B5D6B /* SwiftUIAlerts */,
@@ -210,7 +213,7 @@
 		C923231D2C6B59A0009B5D6B /* SwiftUIAlerts */ = {
 			isa = PBXGroup;
 			children = (
-				C92323202C6B5A3A009B5D6B /* AlertType.swift */,
+				C92323202C6B5A3A009B5D6B /* AlertType0.swift */,
 				C92323222C6B5AAA009B5D6B /* AlertButtonType.swift */,
 				C92323262C6B5B4C009B5D6B /* AlertButton.swift */,
 				C92323242C6B5AE9009B5D6B /* AlertDetails.swift */,
@@ -326,7 +329,7 @@
 				C9ED1E022BCE94F300610988 /* NavigationSheet.swift in Sources */,
 				C92323232C6B5AAA009B5D6B /* AlertButtonType.swift in Sources */,
 				C95061BA2BE1164E00CA52EA /* Tab2View.swift in Sources */,
-				C92323212C6B5A3A009B5D6B /* AlertType.swift in Sources */,
+				C92323212C6B5A3A009B5D6B /* AlertType0.swift in Sources */,
 				C9ED1E082BCE9AE700610988 /* NavigationPush.swift in Sources */,
 				C9DAB5762C0F3B120039F0A5 /* ColorView.swift in Sources */,
 				C92323342C734FF7009B5D6B /* AlertControllerKey.swift in Sources */,
@@ -340,6 +343,7 @@
 				C90B80E92B84DD32006BFBA7 /* BackgroundIgnoringSafeArea.swift in Sources */,
 				C92323272C6B5B4C009B5D6B /* AlertButton.swift in Sources */,
 				C9812C552C45473500B98933 /* CircularShapesView.swift in Sources */,
+				C9A915572C8F1B4B00202A43 /* AsyncAwaitView.swift in Sources */,
 				C91F90612B72670800CE0BA6 /* ContentView.swift in Sources */,
 				C9DAB5782C0F3E570039F0A5 /* ImageView.swift in Sources */,
 				C95061B62BE115DA00CA52EA /* TabsView.swift in Sources */,
